@@ -1,14 +1,39 @@
 {
-  "name": "Livebase",
-  "homepage": "https://github.com/neel2292/livebase",
+  "name": "livebase",
+  "version": "0.1",
   "description": "",
-  "main": "",
-  "license": "MIT",
+  "main": "livebase.js",
+  "keywords": [
+      "angular",
+      "chat",
+      "bot",
+      "livebase"
+  ],
   "ignore": [
     "**/.*",
-    "node_modules",
     "bower_components",
-    "test",
-    "tests"
-  ]
+      "CHANGELOG.md",
+      "components",
+      "node_modules",
+      "test",
+      "package.json",
+      "Gruntfile.js",
+      ".bowerrc",
+      ".gitignore",
+      ".travis.yml",
+      "README.md"
+  ],
+  "dependencies": {
+      "angular": ">=1.5.5",
+      "pouchdb": ">=5.3.2"
+  },
+  "authors": [
+    "Neel Singh"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/neel2292/livebase.git"
+  }
 }
