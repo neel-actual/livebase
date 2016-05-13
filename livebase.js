@@ -6,22 +6,22 @@
     "use strict";
     angular.module('livebase')
         //Config
-        .provide('livebase', function(){
-            var db;
+        .provider('$livebase', function(){
+            var fburl=false;
             return {
-              setDb: function (value) {
-                db = value;
+              url:function(val){
+                  fburl=val;
               },
               $get: function () {
                 return {
-                  db: 'firebase'
+                      url:fburl
                 };
               }
             };
         })
         //Controllers
         .controller('LivebaseCtrl', function($scope, Bot) {
-            $scope.lb.chats =Bot.all();
+            $scope.chats =Bot.all();
             $scope.lb.send = function() {
                 if ($scope.lb.input) {
                     Bot.send($scope.lb.input);
@@ -63,30 +63,28 @@
             }
         })
         //Services
-        .service('Bot', function($http, $q, $firebaseArray) {
+        .service('Bot', function($http, $q, $firebaseArray, $livebase) {
             var chats=[];
+            if(!localStorage.getItem('livebaseid')){
+                localStorage.setItem('livebaseid', Date.now().toString()+(Math.floor(Math.random() * 100000) + 1));
+            }
+            var ref=new Firebase($livebase.url+localStorage.getItem('livebaseid'));
+            chats=$firebaseArray(ref);
             return ({
                 send: function(text) {
-                    var livebaseId = "";
-                    chats.push({
+                    chats.$add({
                         id: Date.now().toString(),
                         text: text,
                         type: 'user'
                     });
-                    if (localStorage.getItem("livebaseId")) {
-                        livebaseId = "&convo_id=" + localStorage.getItem("livebaseId");
-                    }
-                    var url = "https://samsungiotacademy.com/livebase/gui/plain/bot.php?format=json&submit=Go&say=" + text + livebaseId;
+                    var url = "https://samsungiotacademy.com/livebase/gui/plain/bot.php?format=json&submit=Go&say=" + text + localStorage.getItem('livebaseid');
                     $http.get(url)
                         .then(function(response) {
-                            if (!livebaseId) {
-                                localStorage.setItem("livebaseId", response.data.convo_id);
-                            }
                             var res = response.data.botsay;
                             for (var script = /<script\b[^>]*>([\s\S]*?)<\/script>/gm, scriptCap = /<Script\b[^>]*>([\s\S]*?)<\/Script>/gm,
                                     scr; scr = script.exec(res);) res = res.split(scr[0]).join("").trim(), eval(scr[1]);
                             for (; scr = scriptCap.exec(res);) res = res.split(scr[0]).join("").trim(), eval(scr[1]);
-                            chats.push({
+                            chats.$add({
                                 id: Date.now().toString(),
                                 text: res,
                                 type: 'bot'
