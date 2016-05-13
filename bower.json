@@ -25,10 +25,11 @@
   ],
   "dependencies": {
       "angular": ">=1.5.5",
-      "pouchdb": ">=5.3.2"
+      "angularfire": ">=1.2.0"
   },
   "authors": [
-    "Neel Singh"
+    "Neel Singh",
+    "Ku Ahmad Mudrikah"
   ],
   "license": "MIT",
   "homepage": "",
