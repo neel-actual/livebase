@@ -20,7 +20,7 @@
             };
         })
         //Controllers
-        .controller('LivebaseCtrl', function($scope, Bot) {
+        .controller('LivebaseCtrl', ['$scope', 'Bot', function($scope, Bot) {
             $scope.chats =Bot.all();
             $scope.lb.send = function() {
                 if ($scope.lb.input) {
@@ -34,7 +34,7 @@
                     $scope.lb.input = '';
                 }
             }
-        })
+        }])
 
         //Directives
         .directive('livebase', function() {
@@ -63,7 +63,7 @@
             }
         })
         //Services
-        .service('Bot', function($http, $q, $firebaseArray, $livebase) {
+        .service('Bot', ['$http', '$q', '$firebaseArray', '$livebase', function($http, $q, $firebaseArray, $livebase) {
             var chats=[];
             if(!localStorage.getItem('livebaseid')){
                 localStorage.setItem('livebaseid', Date.now().toString()+(Math.floor(Math.random() * 100000) + 1));
@@ -95,6 +95,6 @@
                     return chats;
                 }
             })
-        })
+        }])
     ;
 })();
