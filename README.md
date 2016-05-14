@@ -4,6 +4,7 @@ Chat bot for Angular
 ### Bower
 1. Install from bower
 2. Include Livebase module
+
 ### Direct
 ## Usage
 TODO: Write usage instructions
