@@ -8,7 +8,13 @@ Chat bot for Angular
 `angular.module('App', ['livebase'])`
 
   `.config(function($livebaseProvider){`
-
+  
+    `$livebaseProvider.url(FIREBASE_URL);`
+    
+    `$livebaseProvider.tell([`
+    
+      `{ cmd:"Hello", reply:"Hello, may I know your name?" }`
+    `]);`
 ### Direct
 ## Usage
 TODO: Write usage instructions
