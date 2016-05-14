@@ -1,7 +1,7 @@
 {
   "name": "livebase",
   "version": "0.6",
-  "description": "A module to add a chat bot in your application",
+  "description": "Chat bot for Angular",
   "main": "livebase.js",
   "keywords": [
       "angular",
