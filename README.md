@@ -24,7 +24,6 @@ angular.module('App', ['livebase'])
 <script src="bower_components/livebase/livebase.js"></script>
 ```
 
-### Direct
 ## Usage
 TODO: Write usage instructions
 ## License
