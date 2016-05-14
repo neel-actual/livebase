@@ -1,8 +1,8 @@
 # Livebase
 Chat bot for Angular
 ## Installation
-### Install from bower `bower install livebase`
-### Include Livebase module and configure your settings
+#### 1. Install from bower `bower install livebase`
+#### 2. Include Livebase module and configure your settings
 
 ```javascript
 angular.module('App', ['livebase'])
@@ -13,7 +13,7 @@ angular.module('App', ['livebase'])
     ]);
 ```
 
-### Include livebase and its dependencies
+#### 3. Include livebase and its dependencies
 
 ```html
 <!-- Firebase -->
