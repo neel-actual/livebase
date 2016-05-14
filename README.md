@@ -13,6 +13,7 @@ angular.module('App', ['livebase'])
       { cmd:"Hello", reply:"Hello, may I know your name?" }
     ]);
 ```
+
 3. Include libraries
 
 ```html
