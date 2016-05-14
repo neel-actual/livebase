@@ -28,7 +28,7 @@ angular.module('App', ['livebase'])
 <!-- AngularFire -->
 <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
 <!-- Livebase -->
-<script src="bower_components/livebase/livebase.js"></script>
+<script src="bower_components/livebase/livebase.min.js"></script>
 ```
 
 ## Usage
