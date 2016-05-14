@@ -49,4 +49,4 @@ angular.module('App', ['livebase'])
 ![alt text](https://cloud.githubusercontent.com/assets/12211863/15270736/54366296-1a5c-11e6-9a7e-ce49250a15e5.PNG "Basic Usage")
 
 ## Example
-![alt text](https://cloud.githubusercontent.com/assets/12211863/15270797/ff8fba1e-1a5e-11e6-880a-a00e6c6bfa96.png "Example")
+![alt text](https://cloud.githubusercontent.com/assets/12211863/15270803/3fe29a00-1a5f-11e6-92a1-120a5c22a64f.png "Example")
