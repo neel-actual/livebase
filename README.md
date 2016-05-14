@@ -1,5 +1,5 @@
 # Livebase
-Chat bot for Angular
+Chat bot for Angular. Designed so that developer could focus on UI and personalization of the chat bot.
 ## Installation
 #### 1. Install from bower `bower install livebase`
 #### 2. Include Livebase module and configure your settings
