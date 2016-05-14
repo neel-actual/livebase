@@ -25,6 +25,19 @@ angular.module('App', ['livebase'])
 ```
 
 ## Usage
-TODO: Write usage instructions
+
+```html
+<livebase>
+    <ul>
+        <li ng-repeat="chat in chats">
+            {{chat.type}} - {{chat.text}}
+        </li>
+    </ul>
+    <lb-listen>Speak</lb-listen>
+    <lb-input></lb-input>
+    <lb-send>Send</lb-send>
+</livebase>
+```
+
 ## License
 TODO: Write license
