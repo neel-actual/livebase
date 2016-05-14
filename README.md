@@ -41,5 +41,4 @@ angular.module('App', ['livebase'])
 </livebase>
 ```
 
-## License
-TODO: Write license
+![alt text]( "Basic Usage")
