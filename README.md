@@ -1,5 +1,5 @@
 # Livebase
-TODO: Write a project description
+Chat bot for Angular
 ## Installation
 ### Using bower
 ## Usage
