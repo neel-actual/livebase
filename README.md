@@ -13,7 +13,12 @@ angular.module('App', ['livebase'])
       { cmd:"Hello", reply:"Hello, may I know your name?" }
     ]);
 ```
-  
+3. Include libraries
+
+```html
+<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+```
+
 ### Direct
 ## Usage
 TODO: Write usage instructions
