@@ -46,4 +46,4 @@ angular.module('App', ['livebase'])
 </livebase>
 ```
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Basic Usage")
+![alt text](https://cloud.githubusercontent.com/assets/12211863/15270736/54366296-1a5c-11e6-9a7e-ce49250a15e5.PNG "Basic Usage")
