@@ -1,7 +1,7 @@
 # Livebase
 TODO: Write a project description
 ## Installation
-TODO: Describe the installation process
+### Using bower
 ## Usage
 TODO: Write usage instructions
 ## Contributing
