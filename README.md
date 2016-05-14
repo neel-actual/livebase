@@ -2,7 +2,7 @@
 Chat bot for Angular
 ## Installation
 ### Bower
-1. Install from bower `bower install livebase angularfire`
+1. Install from bower `bower install livebase angular angularfire`
 2. Include Livebase module and configure your settings
 
 ```javascript
@@ -16,7 +16,14 @@ angular.module('App', ['livebase'])
 3. Include libraries
 
 ```html
+<!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+
+<!-- Firebase -->
 <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
 ```
 
 ### Direct
