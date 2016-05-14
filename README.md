@@ -14,7 +14,7 @@ angular.module('App', ['livebase'])
     ]);
 ```
 
-3. Include libraries
+3. Include livebase and its dependencies
 
 ```html
 <!-- Firebase -->
