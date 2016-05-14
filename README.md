@@ -1,7 +1,9 @@
 # Livebase
 Chat bot for Angular
 ## Installation
-### Using bower
+### Bower
+1. 
+### Direct
 ## Usage
 TODO: Write usage instructions
 ## Contributing
