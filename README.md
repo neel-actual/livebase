@@ -9,12 +9,14 @@ Chat bot for Angular
 
   `.config(function($livebaseProvider){`
   
-    `$livebaseProvider.url(FIREBASE_URL);`
+  `$livebaseProvider.url(FIREBASE_URL);`
     
-    `$livebaseProvider.tell([`
+  `$livebaseProvider.tell([`
     
-      `{ cmd:"Hello", reply:"Hello, may I know your name?" }`
-    `]);`
+  `{ cmd:"Hello", reply:"Hello, may I know your name?" }`
+  
+  `]);`
+  
 ### Direct
 ## Usage
 TODO: Write usage instructions
