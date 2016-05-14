@@ -2,7 +2,6 @@
 Chat bot for Angular
 ## Installation
 ### Bower
-1. 
 ### Direct
 ## Usage
 TODO: Write usage instructions
