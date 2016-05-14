@@ -6,6 +6,7 @@ Chat bot for Angular
 2. Include Livebase module and configure your settings
 
 `angular.module('App', ['livebase'])`
+
   `.config(function($livebaseProvider){`
 
 ### Direct
