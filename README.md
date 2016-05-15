@@ -51,10 +51,8 @@ angular.module('App', ['livebase'])
 </livebase>
 ```
 
-![alt text](https://cloud.githubusercontent.com/assets/12211863/15270736/54366296-1a5c-11e6-9a7e-ce49250a15e5.PNG "Basic Usage")
-
-## Example
-![alt text](https://cloud.githubusercontent.com/assets/12211863/15270808/602f7a62-1a5f-11e6-8c14-4ea8fefad30e.png "Example")
+## Demo
+[Livebase](https://livebase.firebaseapp.com/)
 
 ## Credits
 ##### Dr Goh Ong Sing
