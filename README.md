@@ -52,5 +52,5 @@ angular.module('App', ['livebase'])
 ![alt text](https://cloud.githubusercontent.com/assets/12211863/15270808/602f7a62-1a5f-11e6-8c14-4ea8fefad30e.png "Example")
 
 ## Credits
-Dr Goh Ong Sing
-Ku Ahmad Mudrikah
+### Dr Goh Ong Sing
+### Ku Ahmad Mudrikah
